@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'ElValidator_Example', :exclusive => true do
+  pod 'ElValidator', :path => '../'
+end
+
+target 'ElValidator_Tests', :exclusive => true do
+  pod 'ElValidator', :path => '../'
+
+  
+end

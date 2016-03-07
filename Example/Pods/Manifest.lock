@@ -1,0 +1,14 @@
+PODS:
+  - ElValidator (0.1.0)
+
+DEPENDENCIES:
+  - ElValidator (from `../`)
+
+EXTERNAL SOURCES:
+  ElValidator:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ElValidator: db0903c6126a782c6d49a6d947c4180c0c534ef6
+
+COCOAPODS: 0.39.0

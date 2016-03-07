@@ -1,0 +1,6 @@
+framework module Pods_ElValidator_Tests {
+  umbrella header "Pods-ElValidator_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

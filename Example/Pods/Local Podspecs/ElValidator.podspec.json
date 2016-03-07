@@ -1,0 +1,25 @@
+{
+  "name": "ElValidator",
+  "version": "0.1.0",
+  "summary": "A short description of ElValidator.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/ElValidator",
+  "license": "MIT",
+  "authors": {
+    "Victor Carmouze": "victor.carmouze@backelite.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/ElValidator.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "ElValidator": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

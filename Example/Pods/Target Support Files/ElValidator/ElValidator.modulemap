@@ -1,0 +1,6 @@
+framework module ElValidator {
+  umbrella header "ElValidator-umbrella.h"
+
+  export *
+  module * { export * }
+}
