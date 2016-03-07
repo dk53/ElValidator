@@ -47,4 +47,8 @@ public class TextFieldValidator: UITextField {
         }
         return true
     }
+
+    public func resetValidators() {
+        validators = []
+    }
 }
