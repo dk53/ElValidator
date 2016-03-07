@@ -10,10 +10,10 @@ import Foundation
 
 public class TextFieldValidator: UITextField {
     public var validationBlock: (ErrorType? -> Void)?
-    
+
     var validators: [Validator]  = []
     var delegateInterceptor :TextFieldValidatorDelegate?
-    
+
     override public var delegate: UITextFieldDelegate? {
         get { return (self.delegate as? TextFieldValidatorDelegate)?.finalDelegate }
         set {
@@ -22,11 +22,11 @@ public class TextFieldValidator: UITextField {
             super.delegate = delegateInterceptor
         }
     }
-    
+
     public func addValidator(validator:Validator) {
         validators.append(validator)
     }
-    
+
     func validate() {
         for (_, validator) in validators.enumerate() {
             do {
@@ -35,14 +35,16 @@ public class TextFieldValidator: UITextField {
             } catch {
                 validationBlock?(error)
             }
-            
+
         }
     }
-    
+
     public func isValid() -> Bool {
         for (_, validator) in validators.enumerate() {
-            if ((try? validator.validateValue(text!)) == nil) {
-                return false
+            if let text = text {
+                if (try? validator.validateValue(text)) == nil {
+                    return false
+                }
             }
         }
         return true

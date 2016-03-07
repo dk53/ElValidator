@@ -20,27 +20,27 @@ public enum PatternValidatorRegex : String {
 
 public class PatternValidator : Validator {
     var internalExpression: NSRegularExpression?
-    
+
     public init (validationEvent: ValidatorEvents = .ValidationAtEnd, pattern: PatternValidatorRegex) {
         do {
             try self.internalExpression = NSRegularExpression(pattern: pattern.rawValue, options: NSRegularExpressionOptions.CaseInsensitive)
         } catch {
             print(error)
         }
-        
+
         super.init(validationEvent: validationEvent)
     }
-    
+
     public init (validationEvent: ValidatorEvents = .ValidationAtEnd, customPattern: String) {
         do {
-             self.internalExpression = try NSRegularExpression(pattern: customPattern, options: NSRegularExpressionOptions.CaseInsensitive)
+            self.internalExpression = try NSRegularExpression(pattern: customPattern, options: NSRegularExpressionOptions.CaseInsensitive)
         } catch {
             print(error)
         }
-        
+
         super.init(validationEvent: validationEvent)
     }
-    
+
     public override func validateValue(value: String) throws {
         guard self.internalExpression?.numberOfMatchesInString(value, options: .ReportProgress, range: NSMakeRange(0, value.characters.count)) > 0 else {
             throw ValidatorError.TextDoNotMatchRegex

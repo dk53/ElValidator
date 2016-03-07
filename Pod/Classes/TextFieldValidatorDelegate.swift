@@ -67,7 +67,7 @@ public class TextFieldValidatorDelegate: NSObject, UITextFieldDelegate {
         }
 
         finalDelegate?.textField?(textField, shouldChangeCharactersInRange: range, replacementString: string)
-
+        
         return true;
     }
     

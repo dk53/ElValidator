@@ -19,22 +19,22 @@ public enum ValidatorError: ErrorType {
 
 public struct ValidatorEvents: OptionSetType {
     public let rawValue: Int
-    
+
     static let None                                 = ValidatorEvents(rawValue: 0)
     public static let ValidationPerCharacter        = ValidatorEvents(rawValue: 1 << 0)
     public static let ValidationAtEnd               = ValidatorEvents(rawValue: 1 << 1)
     public static let ValidationAllowBadCharacters  = ValidatorEvents(rawValue: 1 << 2)
-    
+
     public init(rawValue:Int) {self.rawValue = rawValue}
 }
 
 public class Validator {
     public var validationEvent = ValidatorEvents.ValidationAtEnd
-    
+
     public func validateValue(value:String) throws {
         print("To override")
     }
-    
+
     public init(validationEvent:ValidatorEvents) {
         self.validationEvent = validationEvent
     }
