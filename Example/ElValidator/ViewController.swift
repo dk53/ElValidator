@@ -19,14 +19,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     var activeTextField: TextFieldValidator?
     
-    var validationBlock:((error: ErrorType?) -> Void)?
+    var validationBlock:((errors: [ErrorType]) -> Void)?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        validationBlock = { (error: ErrorType?) -> Void in
-            if let error = error {
+        validationBlock = { (errors: [ErrorType]) -> Void in
+            if let error = errors.first {
                 print(error)
                 self.activeTextField?.textColor = UIColor.redColor();
             } else {

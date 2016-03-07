@@ -9,7 +9,7 @@
 import Foundation
 
 public class TextFieldValidator: UITextField {
-    public var validationBlock: (ErrorType? -> Void)?
+    public var validationBlock: ([ErrorType] -> Void)?
 
     var validators: [Validator]  = []
     var delegateInterceptor :TextFieldValidatorDelegate?
@@ -28,15 +28,16 @@ public class TextFieldValidator: UITextField {
     }
 
     func validate() {
+        var errors: [ErrorType] = []
+
         for (_, validator) in validators.enumerate() {
             do {
                 try validator.validateValue(text ?? "")
-                validationBlock?(nil)
             } catch {
-                validationBlock?(error)
+                errors.append(error)
             }
-            
         }
+        validationBlock?(errors)
     }
     
     public func isValid() -> Bool {

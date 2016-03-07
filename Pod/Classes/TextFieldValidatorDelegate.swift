@@ -30,17 +30,18 @@ public class TextFieldValidatorDelegate: NSObject, UITextFieldDelegate {
     public func textFieldDidEndEditing(textField: UITextField) {
         if let textField = textField as? TextFieldValidator {
 
+            var errors: [ErrorType] = []
             for validator in textField.validators {
                 if (validator.validationEvent.contains(.ValidationAtEnd)) {
                     do {
                         try validator.validateValue(textField.text ?? "")
-                        textField.validationBlock?(nil)
                     } catch {
-                        textField.validationBlock?(error)
+                        errors.append(error)
                     }
                 }
             }
 
+            textField.validationBlock?(errors)
             finalDelegate?.textFieldDidEndEditing?(textField)
         }
     }
@@ -50,20 +51,21 @@ public class TextFieldValidatorDelegate: NSObject, UITextFieldDelegate {
         let fullString = (textField.text ?? "" as NSString).stringByReplacingCharactersInRange(range, withString:string)
 
         var textFieldHasChanged = false
+
         for validator in textField.validators {
             if (validator.validationEvent.contains(.ValidationPerCharacter) || validator.validationEvent.contains(.ValidationAllowBadCharacters)) {
                 do {
                     textFieldHasChanged = true
                     try validator.validateValue(fullString)
                 } catch {
-                    textField.validationBlock?(error)
+                    textField.validationBlock?([error])
                     return !(validator.validationEvent.contains(.ValidationAllowBadCharacters))
                 }
             }
         }
 
         if (textFieldHasChanged) {
-            textField.validationBlock?(nil)
+            textField.validationBlock?([])
         }
 
         finalDelegate?.textField?(textField, shouldChangeCharactersInRange: range, replacementString: string)
