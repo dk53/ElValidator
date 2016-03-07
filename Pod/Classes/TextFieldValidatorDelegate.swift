@@ -33,7 +33,7 @@ public class TextFieldValidatorDelegate: NSObject, UITextFieldDelegate {
             for validator in textField.validators {
                 if (validator.validationEvent.contains(.ValidationAtEnd)) {
                     do {
-                        try validator.validateValue(textField.text!)
+                        try validator.validateValue(textField.text ?? "")
                         textField.validationBlock?(nil)
                     } catch {
                         textField.validationBlock?(error)
@@ -47,7 +47,7 @@ public class TextFieldValidatorDelegate: NSObject, UITextFieldDelegate {
 
     public func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         let textField = textField as! TextFieldValidator
-        let fullString = (textField.text! as NSString).stringByReplacingCharactersInRange(range, withString:string)
+        let fullString = (textField.text ?? "" as NSString).stringByReplacingCharactersInRange(range, withString:string)
 
         var textFieldHasChanged = false
         for validator in textField.validators {

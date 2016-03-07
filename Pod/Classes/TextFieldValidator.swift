@@ -30,21 +30,19 @@ public class TextFieldValidator: UITextField {
     func validate() {
         for (_, validator) in validators.enumerate() {
             do {
-                try validator.validateValue(text!)
+                try validator.validateValue(text ?? "")
                 validationBlock?(nil)
             } catch {
                 validationBlock?(error)
             }
-
+            
         }
     }
-
+    
     public func isValid() -> Bool {
         for (_, validator) in validators.enumerate() {
-            if let text = text {
-                if (try? validator.validateValue(text)) == nil {
-                    return false
-                }
+            if (try? validator.validateValue(text ?? "")) == nil {
+                return false
             }
         }
         return true
