@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ElValidator"
-  s.version          = "0.9.3"
+  s.version          = "0.9.4"
   s.summary          = "A simple plugin to help you validate textfield entries"
 
 # This description is used to generate tags and improve search results.
