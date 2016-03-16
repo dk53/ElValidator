@@ -13,12 +13,14 @@ public class LenghtValidator : Validator {
     let max:Int
 
     public override func validateValue(value: String) throws {
-        guard ((min...max).contains(value.characters.count)) else {
+        let chrts = value.characters.count
+
+        guard chrts <= max && chrts >= min else {
             throw ValidatorError.TextTooLong
         }
     }
 
-    public init(validationEvent: ValidatorEvents, min: Int = 0 , max: Int = NSIntegerMax) {
+    public init(validationEvent: ValidatorEvents, min: Int = 0, max: Int = NSIntegerMax) {
         self.max = max
         self.min = min
         super.init(validationEvent: validationEvent)
