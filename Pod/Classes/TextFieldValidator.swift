@@ -27,7 +27,7 @@ public class TextFieldValidator: UITextField {
         validators.append(validator)
     }
 
-    func validate() {
+    public func validate() {
         var errors: [ErrorType] = []
 
         for (_, validator) in validators.enumerate() {
