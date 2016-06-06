@@ -8,15 +8,17 @@
 
 Pod::Spec.new do |s|
   s.name             = "ElValidator"
-  s.version          = "0.9.5"
+  s.version          = "0.9.6"
   s.summary          = "A simple plugin to help you validate textfield entries"
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+  			ElValidator Helps you controle yours UITextField user entries
+			 by validating them.
+			 You can add multiples validators to a UITextfield :
+			- Date Validator
+			- Lenght Validator
+			- Regex
+			- ...
                        DESC
 
   s.homepage         = "https://github.com/dk53/ElValidator"
@@ -32,8 +34,5 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'ElValidator' => ['Pod/Assets/*.png']
   }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  
 end
