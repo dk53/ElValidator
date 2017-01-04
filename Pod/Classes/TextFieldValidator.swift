@@ -23,7 +23,7 @@ open class TextFieldValidator: UITextField {
         }
     }
 
-    open func addValidator(_ validator:Validator) {
+    open func add(validator:Validator) {
         validators.append(validator)
     }
 
