@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ElValidator"
-  s.version          = "0.9.6"
+  s.version          = "1.0"
   s.summary          = "A simple plugin to help you validate textfield entries"
 
   s.description      = <<-DESC
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/dk53/ElValidator"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Victor Carmouze" => "victor.carmouze@backelite.com" }
+  s.author           = { "Victor Carmouze" => "victor.carmouze@gmail.com" }
   s.source           = { :git => "https://github.com/dk53/ElValidator.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '8.0'
