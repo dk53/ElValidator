@@ -19,18 +19,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     var activeTextField: TextFieldValidator?
     
-    var validationBlock:((errors: [ErrorType]) -> Void)?
+    var validationBlock:((_: [Error]) -> Void)?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        validationBlock = { (errors: [ErrorType]) -> Void in
+        validationBlock = { (errors: [Error]) -> Void in
             if let error = errors.first {
                 print(error)
-                self.activeTextField?.textColor = UIColor.redColor();
+                self.activeTextField?.textColor = .red;
             } else {
-                self.activeTextField?.textColor = UIColor.greenColor()
+                self.activeTextField?.textColor = .green
             }
         }
 
@@ -43,24 +43,24 @@ class ViewController: UIViewController, UITextFieldDelegate {
         scrollView.alwaysBounceVertical = true
         registerForKeyboardNotifications()
     }
-    
+
     func registerForKeyboardNotifications() {
-        let notificationCenter = NSNotificationCenter.defaultCenter()
+        let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self,
-            selector: "keyboardWillBeShown:",
-            name: UIKeyboardWillShowNotification,
+            selector: #selector(keyboardWillBeShown),
+            name: NSNotification.Name.UIKeyboardWillShow,
             object: nil)
         notificationCenter.addObserver(self,
-            selector: "keyboardWillBeHidden:",
-            name: UIKeyboardWillHideNotification,
+            selector: #selector(keyboardWillBeHidden),
+            name: NSNotification.Name.UIKeyboardWillHide,
             object: nil)
     }
     
-    func textFieldDidBeginEditing(textField: UITextField) {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
         activeTextField = textField as? TextFieldValidator
     }
-    
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         activeTextField?.resignFirstResponder()
         activeTextField = nil;
         
@@ -69,8 +69,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func configureDateTextField() {
         textFieldDate.delegate = self
-        let df = NSDateFormatter()
-        df.dateStyle = NSDateFormatterStyle.ShortStyle
+        let df = DateFormatter()
+        df.dateStyle = .short
         textFieldDate.addValidator(DateValidator( validationEvent: .ValidationPerCharacter, dateFormatter: df))
         textFieldDate.validationBlock = validationBlock
     }
@@ -93,18 +93,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textFieldList.addValidator(ListValidator(validationEvent: .ValidationPerCharacter, correctValues: ["Swift", "ObjectiveC"]))
         textFieldList.validationBlock = validationBlock
     }
-    
+
     func keyboardWillBeShown(sender: NSNotification) {
-        let info: NSDictionary = sender.userInfo!
-        let value: NSValue = info.valueForKey(UIKeyboardFrameBeginUserInfoKey) as! NSValue
-        let keyboardSize: CGSize = value.CGRectValue().size
-        let contentInsets: UIEdgeInsets = UIEdgeInsetsMake(0.0, 0.0, keyboardSize.height, 0.0)
-        scrollView.contentInset = contentInsets
-        scrollView.scrollIndicatorInsets = contentInsets
+        if let info = sender.userInfo,
+            let value = info[UIKeyboardFrameEndUserInfoKey] as? NSValue {
+            let keyboardSize = value.cgRectValue.size
+            let contentInsets: UIEdgeInsets = UIEdgeInsetsMake(0.0, 0.0, keyboardSize.height, 0.0)
+            scrollView.contentInset = contentInsets
+            scrollView.scrollIndicatorInsets = contentInsets
+        }
     }
     
     func keyboardWillBeHidden(sender: NSNotification) {
-        let contentInsets: UIEdgeInsets = UIEdgeInsetsZero
+        let contentInsets = UIEdgeInsets.zero
         scrollView.contentInset = contentInsets
         scrollView.scrollIndicatorInsets = contentInsets
     }

@@ -18,12 +18,12 @@ public enum PatternValidatorRegex : String {
 }
 
 
-public class PatternValidator : Validator {
+open class PatternValidator : Validator {
     var internalExpression: NSRegularExpression?
 
     public init (validationEvent: ValidatorEvents = .ValidationAtEnd, pattern: PatternValidatorRegex) {
         do {
-            try self.internalExpression = NSRegularExpression(pattern: pattern.rawValue, options: NSRegularExpressionOptions.CaseInsensitive)
+            try self.internalExpression = NSRegularExpression(pattern: pattern.rawValue, options: NSRegularExpression.Options.caseInsensitive)
         } catch {
             print(error)
         }
@@ -33,7 +33,7 @@ public class PatternValidator : Validator {
 
     public init (validationEvent: ValidatorEvents = .ValidationAtEnd, customPattern: String) {
         do {
-            self.internalExpression = try NSRegularExpression(pattern: customPattern, options: NSRegularExpressionOptions.CaseInsensitive)
+            self.internalExpression = try NSRegularExpression(pattern: customPattern, options: NSRegularExpression.Options.caseInsensitive)
         } catch {
             print(error)
         }
@@ -41,9 +41,10 @@ public class PatternValidator : Validator {
         super.init(validationEvent: validationEvent)
     }
 
-    public override func validateValue(value: String) throws {
-        guard self.internalExpression?.numberOfMatchesInString(value, options: .ReportProgress, range: NSMakeRange(0, value.characters.count)) > 0 else {
-            throw ValidatorError.TextDoNotMatchRegex
+    open override func validateValue(_ value: String) throws {
+        guard let internalExpression = self.internalExpression,
+            internalExpression.numberOfMatches(in: value, options: .reportProgress, range: NSMakeRange(0, value.characters.count)) > 0 else {
+                throw ValidatorError.textDoNotMatchRegex
         }
     }
 }

@@ -11,6 +11,7 @@
 		501B6F52698C0B002D70CAA486283BCD /* ElValidator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F63D57A7483A1BEADF6EFDA92F77E397 /* ElValidator-dummy.m */; };
 		51FF48CE25D8471F06780BB874FA5CD2 /* ElValidator.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6BA80EEEF5334A670A8171FBC90D06E2 /* ElValidator.bundle */; };
 		534BBD1ADEC461A5A0C378A08C8438F3 /* Pods-ElValidator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF38351248F079A1D0DC2700202F4EDE /* Pods-ElValidator_Example-dummy.m */; };
+		5705AB521E1D37150083194E /* bundle.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5705AB511E1D37150083194E /* bundle.plist */; };
 		57C76B051C8D816700D01460 /* TextFieldValidatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C76B031C8D816700D01460 /* TextFieldValidatorDelegate.swift */; };
 		57C76B061C8D816700D01460 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C76B041C8D816700D01460 /* Validator.swift */; };
 		57C76B0C1C8D819900D01460 /* DateValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C76B071C8D819900D01460 /* DateValidator.swift */; };
@@ -59,6 +60,7 @@
 		4709610A40F2ADA2579984C7E576A860 /* Pods_ElValidator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElValidator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F1AA5459387D1D09A735D8D60D7CE7 /* Pods_ElValidator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElValidator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C6C1566E643A5F503B55D0BB5631C8F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5705AB511E1D37150083194E /* bundle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bundle.plist; sourceTree = "<group>"; };
 		57C76B031C8D816700D01460 /* TextFieldValidatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldValidatorDelegate.swift; sourceTree = "<group>"; };
 		57C76B041C8D816700D01460 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		57C76B071C8D819900D01460 /* DateValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateValidator.swift; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 			children = (
 				60AFA57E5545C39F46C1E0E7F190C069 /* Pods-ElValidator_Example */,
 				AF7392FACC027E2C2A4E8A2FDF777711 /* Pods-ElValidator_Tests */,
+				5705AB511E1D37150083194E /* bundle.plist */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -381,7 +384,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0820;
+				TargetAttributes = {
+					1887E13275B69D9A22A46FA9D7370B01 = {
+						DevelopmentTeam = 985759G368;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					33FD778D10753AE950E224E8F68D0BAA = {
+						DevelopmentTeam = 985759G368;
+						LastSwiftMigration = 0820;
+					};
+					88FB6C5062010CB07D9392CC402C7812 = {
+						DevelopmentTeam = 985759G368;
+					};
+					EF97E9F87BF6FE9859481C0970C25AA1 = {
+						DevelopmentTeam = 985759G368;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -415,6 +435,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5705AB521E1D37150083194E /* bundle.plist in Resources */,
 				51FF48CE25D8471F06780BB874FA5CD2 /* ElValidator.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,13 +518,17 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -513,6 +538,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -522,10 +548,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AEEDAD40299AC3210D6F0E1C617B3A07 /* ElValidator.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 985759G368;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/bundle.plist";
 				PRODUCT_NAME = ElValidator;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
@@ -534,9 +564,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F6F304F12F64211D4EDC46C9FD22F920 /* Pods-ElValidator_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 985759G368;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -551,6 +583,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_ElValidator_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -574,13 +607,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -608,6 +646,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 985759G368;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -619,10 +658,12 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ElValidator/ElValidator.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = ElValidator;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -633,9 +674,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AA8900309FFD2EC6EDAA5641E6E48193 /* Pods-ElValidator_Example.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 985759G368;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -650,6 +693,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_ElValidator_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -663,10 +707,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AEEDAD40299AC3210D6F0E1C617B3A07 /* ElValidator.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 985759G368;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/bundle.plist";
 				PRODUCT_NAME = ElValidator;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -675,9 +723,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 16568BBDA0416CBD255DBE264B9F1401 /* Pods-ElValidator_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 985759G368;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -692,6 +742,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_ElValidator_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -707,9 +758,10 @@
 			baseConfigurationReference = AEEDAD40299AC3210D6F0E1C617B3A07 /* ElValidator.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 985759G368;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -721,9 +773,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ElValidator/ElValidator.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = ElValidator;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -734,9 +788,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A04443932865BD40DC8F8464EDB76DD7 /* Pods-ElValidator_Tests.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 985759G368;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -751,6 +807,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_ElValidator_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

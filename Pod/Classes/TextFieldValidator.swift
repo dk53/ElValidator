@@ -8,13 +8,13 @@
 
 import Foundation
 
-public class TextFieldValidator: UITextField {
-    public var validationBlock: ([ErrorType] -> Void)?
+open class TextFieldValidator: UITextField {
+    open var validationBlock: (([Error]) -> Void)?
 
     var validators: [Validator]  = []
     var delegateInterceptor :TextFieldValidatorDelegate?
 
-    override public var delegate: UITextFieldDelegate? {
+    override open var delegate: UITextFieldDelegate? {
         get { return (self.delegate as? TextFieldValidatorDelegate)?.finalDelegate }
         set {
             self.delegateInterceptor = TextFieldValidatorDelegate()
@@ -23,33 +23,34 @@ public class TextFieldValidator: UITextField {
         }
     }
 
-    public func addValidator(validator:Validator) {
+    open func addValidator(_ validator:Validator) {
         validators.append(validator)
     }
 
-    public func validate() {
-        var errors: [ErrorType] = []
+    open func validate() {
+        var errors: [Error] = []
 
-        for (_, validator) in validators.enumerate() {
+        validators.forEach {
             do {
-                try validator.validateValue(text ?? "")
+                try $0.validateValue(text ?? "")
             } catch {
                 errors.append(error)
             }
         }
+
         validationBlock?(errors)
     }
     
-    public func isValid() -> Bool {
-        for (_, validator) in validators.enumerate() {
-            if (try? validator.validateValue(text ?? "")) == nil {
+    open func isValid() -> Bool {
+        return validators.filter {
+            if (try? $0.validateValue(text ?? "")) == nil {
                 return false
             }
-        }
-        return true
+            return true
+        }.count > 0
     }
 
-    public func resetValidators() {
+    open func resetValidators() {
         validators = []
     }
 }

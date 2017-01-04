@@ -8,12 +8,12 @@
 
 import Foundation
 
-public class DateValidator : Validator {
-    let dateFormatter:NSDateFormatter
-    let minDate:NSDate?
-    let maxDate:NSDate?
+open class DateValidator : Validator {
+    let dateFormatter:DateFormatter
+    let minDate:Date?
+    let maxDate:Date?
 
-    public init(validationEvent: ValidatorEvents = ValidatorEvents.ValidationAtEnd, dateFormatter: NSDateFormatter, minDate:NSDate = NSDate(timeIntervalSince1970: -DBL_MAX), maxDate:NSDate = NSDate(timeIntervalSinceNow: DBL_MAX)) {
+    public init(validationEvent: ValidatorEvents = ValidatorEvents.ValidationAtEnd, dateFormatter: DateFormatter, minDate:Date = Date(timeIntervalSince1970: -DBL_MAX), maxDate:Date = Date(timeIntervalSinceNow: DBL_MAX)) {
 
         self.dateFormatter = dateFormatter
         self.minDate = minDate
@@ -22,22 +22,22 @@ public class DateValidator : Validator {
     }
 
 
-    public override func validateValue(value:String) throws {
-        let date = dateFormatter.dateFromString(value)
+    open override func validateValue(_ value:String) throws {
+        let date = dateFormatter.date(from: value)
 
         if date == nil {
-            throw ValidatorError.DateFormatIsNotCorrect
+            throw ValidatorError.dateFormatIsNotCorrect
         }
 
         if let minDate = minDate {
-            if date?.compare(minDate) == NSComparisonResult.OrderedAscending {
-                throw ValidatorError.DateInferiorToMinDate
+            if date?.compare(minDate) == ComparisonResult.orderedAscending {
+                throw ValidatorError.dateInferiorToMinDate
             }
         }
 
         if let maxDate = maxDate {
-            if date?.compare(maxDate) == NSComparisonResult.OrderedDescending {
-                throw ValidatorError.DateSuperiorToMaxDate
+            if date?.compare(maxDate) == ComparisonResult.orderedDescending {
+                throw ValidatorError.dateSuperiorToMaxDate
             }
         }
     }

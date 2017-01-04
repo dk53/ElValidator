@@ -8,16 +8,16 @@
 
 import Foundation
 
-public enum ValidatorError: ErrorType {
-    case TextTooLong
-    case TextNotInList
-    case TextDoNotMatchRegex
-    case DateInferiorToMinDate
-    case DateSuperiorToMaxDate
-    case DateFormatIsNotCorrect
+public enum ValidatorError: Error {
+    case textTooLong
+    case textNotInList
+    case textDoNotMatchRegex
+    case dateInferiorToMinDate
+    case dateSuperiorToMaxDate
+    case dateFormatIsNotCorrect
 }
 
-public struct ValidatorEvents: OptionSetType {
+public struct ValidatorEvents: OptionSet {
     public let rawValue: Int
 
     static let None                                 = ValidatorEvents(rawValue: 0)
@@ -28,10 +28,10 @@ public struct ValidatorEvents: OptionSetType {
     public init(rawValue:Int) {self.rawValue = rawValue}
 }
 
-public class Validator {
-    public var validationEvent = ValidatorEvents.ValidationAtEnd
+open class Validator {
+    open var validationEvent = ValidatorEvents.ValidationAtEnd
 
-    public func validateValue(value:String) throws {
+    open func validateValue(_ value:String) throws {
         print("To override")
     }
 

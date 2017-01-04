@@ -8,15 +8,15 @@
 
 import Foundation
 
-public class LenghtValidator : Validator {
+open class LenghtValidator : Validator {
     let min:Int
     let max:Int
 
-    public override func validateValue(value: String) throws {
+    open override func validateValue(_ value: String) throws {
         let chrts = value.characters.count
 
         guard chrts <= max && chrts >= min else {
-            throw ValidatorError.TextTooLong
+            throw ValidatorError.textTooLong
         }
     }
 
