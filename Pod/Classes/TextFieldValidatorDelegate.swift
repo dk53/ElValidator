@@ -32,13 +32,11 @@ open class TextFieldValidatorDelegate: NSObject, UITextFieldDelegate {
 
             var errors: [Error] = []
             textField.validators.forEach {
-                if ($0.validationEvent.contains(.validationAtEnd)) {
                     do {
                         try $0.validate(value: textField.text ?? "")
                     } catch {
                         errors.append(error)
                     }
-                }
             }
 
             textField.validationBlock?(errors)
