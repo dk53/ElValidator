@@ -69,12 +69,8 @@ open class TextFieldValidatorDelegate: NSObject, UITextFieldDelegate {
             if (textFieldHasChanged) {
                 textField.validationBlock?([])
             }
-
         }
 
-        finalDelegate?.textField?(textField, shouldChangeCharactersIn: range, replacementString: string)
-
-        return true
-
+        return (finalDelegate?.textField?(textField, shouldChangeCharactersIn: range, replacementString: string)) ?? true
     }
 }
