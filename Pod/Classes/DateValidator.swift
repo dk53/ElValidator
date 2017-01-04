@@ -13,7 +13,7 @@ open class DateValidator : Validator {
     let minDate:Date?
     let maxDate:Date?
 
-    public init(validationEvent: ValidatorEvents = ValidatorEvents.ValidationAtEnd, dateFormatter: DateFormatter, minDate:Date = Date(timeIntervalSince1970: -DBL_MAX), maxDate:Date = Date(timeIntervalSinceNow: DBL_MAX)) {
+    public init(validationEvent: ValidatorEvents = .validationAtEnd, dateFormatter: DateFormatter, minDate:Date = Date(timeIntervalSince1970: -DBL_MAX), maxDate:Date = Date(timeIntervalSinceNow: DBL_MAX)) {
 
         self.dateFormatter = dateFormatter
         self.minDate = minDate
@@ -22,7 +22,7 @@ open class DateValidator : Validator {
     }
 
 
-    open override func validateValue(_ value:String) throws {
+    open override func validate(value:String) throws {
         let date = dateFormatter.date(from: value)
 
         if date == nil {

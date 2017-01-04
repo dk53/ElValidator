@@ -21,17 +21,17 @@ public struct ValidatorEvents: OptionSet {
     public let rawValue: Int
 
     static let None                                 = ValidatorEvents(rawValue: 0)
-    public static let ValidationPerCharacter        = ValidatorEvents(rawValue: 1 << 0)
-    public static let ValidationAtEnd               = ValidatorEvents(rawValue: 1 << 1)
-    public static let ValidationAllowBadCharacters  = ValidatorEvents(rawValue: 1 << 2)
+    public static let validationPerCharacter        = ValidatorEvents(rawValue: 1 << 0)
+    public static let validationAtEnd               = ValidatorEvents(rawValue: 1 << 1)
+    public static let validationAllowBadCharacters  = ValidatorEvents(rawValue: 1 << 2)
 
     public init(rawValue:Int) {self.rawValue = rawValue}
 }
 
 open class Validator {
-    open var validationEvent = ValidatorEvents.ValidationAtEnd
+    open var validationEvent = ValidatorEvents.validationAtEnd
 
-    open func validateValue(_ value:String) throws {
+    open func validate(value: String) throws {
         print("To override")
     }
 

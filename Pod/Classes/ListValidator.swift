@@ -11,12 +11,12 @@ import Foundation
 open class ListValidator : Validator {
     open var correctValues:[String]
 
-    public init(validationEvent: ValidatorEvents = ValidatorEvents.ValidationPerCharacter, correctValues:[String]) {
+    public init(validationEvent: ValidatorEvents = ValidatorEvents.validationPerCharacter, correctValues:[String]) {
         self.correctValues = correctValues
         super.init(validationEvent: validationEvent)
     }
 
-    open override func validateValue(_ value: String) throws {
+    open override func validate(value: String) throws {
         guard (self.correctValues.contains(value)) else {
             throw ValidatorError.textNotInList
         }

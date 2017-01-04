@@ -32,7 +32,7 @@ open class TextFieldValidator: UITextField {
 
         validators.forEach {
             do {
-                try $0.validateValue(text ?? "")
+                try $0.validate(value: text ?? "")
             } catch {
                 errors.append(error)
             }
@@ -43,7 +43,7 @@ open class TextFieldValidator: UITextField {
     
     open func isValid() -> Bool {
         return validators.filter {
-            if (try? $0.validateValue(text ?? "")) == nil {
+            if (try? $0.validate(value: text ?? "")) == nil {
                 return false
             }
             return true

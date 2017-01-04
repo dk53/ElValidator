@@ -32,9 +32,9 @@ open class TextFieldValidatorDelegate: NSObject, UITextFieldDelegate {
 
             var errors: [Error] = []
             textField.validators.forEach {
-                if ($0.validationEvent.contains(.ValidationAtEnd)) {
+                if ($0.validationEvent.contains(.validationAtEnd)) {
                     do {
-                        try $0.validateValue(textField.text ?? "")
+                        try $0.validate(value: textField.text ?? "")
                     } catch {
                         errors.append(error)
                     }
@@ -57,13 +57,13 @@ open class TextFieldValidatorDelegate: NSObject, UITextFieldDelegate {
             var textFieldHasChanged = false
 
             for validator in textField.validators {
-                if (validator.validationEvent.contains(.ValidationPerCharacter) || validator.validationEvent.contains(.ValidationAllowBadCharacters)) {
+                if (validator.validationEvent.contains(.validationPerCharacter) || validator.validationEvent.contains(.validationAllowBadCharacters)) {
                     do {
                         textFieldHasChanged = true
-                        try validator.validateValue(fullString)
+                        try validator.validate(value: fullString)
                     } catch {
                         textField.validationBlock?([error])
-                        return !(validator.validationEvent.contains(.ValidationAllowBadCharacters))
+                        return !(validator.validationEvent.contains(.validationAllowBadCharacters))
                     }
                 }
             }
