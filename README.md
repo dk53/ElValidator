@@ -42,31 +42,31 @@ var textField: TextFieldValidator
 Then simply add the validators you likes.
 ```swift
 textField.delegate = self
-textFieldMax.add(validator: LenghtValidator(validationEvent: .validationPerCharacter, max: 10))
-textFieldMax.validationBlock = validationBlock
+textField.add(validator: LenghtValidator(validationEvent: .validationPerCharacter, max: 10))
+textField.validationBlock = validationBlock
 ```
 
 The you use the validation block to manage feedbacks
-```swift    
+```swift
 var validationBlock:((_: [Error]) -> Void)?
 
 validationBlock = { (errors: [Error]) -> Void in
-if let error = errors.first {
-print(error)
-self.activeTextField?.textColor = .red;
-} else {
-self.activeTextField?.textColor = .green
-}
+    if let error = errors.first {
+        print(error)
+        self.activeTextField?.textColor = .red;
+    } else {
+        self.activeTextField?.textColor = .green
+    }
 }
 ```
 
 ###Validators
 A bunch of validators are included with the framework
 
-**- Date validator**
-**- Lenght validator**
-**- Regex validator**
-**- List validator**
+- **Date validator**
+- **Lenght validator**
+- **Regex validator**
+- **List validator**
 
 ###Parameters
 You can use two events to call your validation block
