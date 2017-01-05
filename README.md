@@ -13,6 +13,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 Require iOS 8 minimum. Use Swift 3
 
+## Latest Version
+
+1.01
+
 ## Installation
 
 ElValidator is available through [CocoaPods](http://cocoapods.org). To install
@@ -50,7 +54,7 @@ The you use the validation block to manage feedbacks
 ```swift
 var validationBlock:((_: [Error]) -> Void)?
 
-validationBlock = { (errors: [Error]) -> Void in
+validationBlock = { [weak self] (errors: [Error]) -> Void in
     if let error = errors.first {
         print(error)
         self.activeTextField?.textColor = .red;
