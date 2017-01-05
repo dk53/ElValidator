@@ -15,22 +15,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var textFieldNumeric: TextFieldValidator!
     @IBOutlet weak var textFieldMax: TextFieldValidator!
     @IBOutlet weak var textFieldList: TextFieldValidator!
-    
+
     @IBOutlet weak var scrollView: UIScrollView!
     var activeTextField: TextFieldValidator?
-    
+
     var validationBlock:((_: [Error]) -> Void)?
-    
-    
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        validationBlock = { (errors: [Error]) -> Void in
+
+        validationBlock = { [weak self] (errors: [Error]) -> Void in
             if let error = errors.first {
                 print(error)
-                self.activeTextField?.textColor = .red;
+                self?.activeTextField?.textColor = .red;
             } else {
-                self.activeTextField?.textColor = .green
+                self?.activeTextField?.textColor = .green
             }
         }
 
@@ -39,7 +39,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         configureMaxTextField()
         configureListTextField()
         // Do any additional setup after loading the view, typically from a nib.
-        
+
         scrollView.alwaysBounceVertical = true
         registerForKeyboardNotifications()
     }
@@ -47,15 +47,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func registerForKeyboardNotifications() {
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self,
-            selector: #selector(keyboardWillBeShown),
-            name: NSNotification.Name.UIKeyboardWillShow,
-            object: nil)
+                                       selector: #selector(keyboardWillBeShown),
+                                       name: NSNotification.Name.UIKeyboardWillShow,
+                                       object: nil)
         notificationCenter.addObserver(self,
-            selector: #selector(keyboardWillBeHidden),
-            name: NSNotification.Name.UIKeyboardWillHide,
-            object: nil)
+                                       selector: #selector(keyboardWillBeHidden),
+                                       name: NSNotification.Name.UIKeyboardWillHide,
+                                       object: nil)
     }
-    
+
     func textFieldDidBeginEditing(_ textField: UITextField) {
         activeTextField = textField as? TextFieldValidator
     }
@@ -63,10 +63,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         activeTextField?.resignFirstResponder()
         activeTextField = nil;
-        
+
         return true
     }
-    
+
     func configureDateTextField() {
         textFieldDate.delegate = self
         let df = DateFormatter()
@@ -74,20 +74,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textFieldDate.add(validator: DateValidator( validationEvent: .validationPerCharacter, dateFormatter: df))
         textFieldDate.validationBlock = validationBlock
     }
-    
+
     func configureNumericTextField()
     {
         textFieldNumeric.delegate = self;
         textFieldNumeric.add(validator: PatternValidator(validationEvent: [.validationPerCharacter, .validationAllowBadCharacters], pattern: .numeric))
         textFieldNumeric.validationBlock = validationBlock
     }
-    
+
     func configureMaxTextField() {
         textFieldMax.delegate = self
         textFieldMax.add(validator: LenghtValidator(validationEvent: .validationPerCharacter, max: 10))
         textFieldMax.validationBlock = validationBlock
     }
-    
+
     func configureListTextField() {
         textFieldList.delegate = self
         textFieldList.add(validator: ListValidator(validationEvent: .validationPerCharacter, correctValues: ["Swift", "ObjectiveC"]))
@@ -103,7 +103,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             scrollView.scrollIndicatorInsets = contentInsets
         }
     }
-    
+
     func keyboardWillBeHidden(sender: NSNotification) {
         let contentInsets = UIEdgeInsets.zero
         scrollView.contentInset = contentInsets
