@@ -57,9 +57,9 @@ var validationBlock:((_: [Error]) -> Void)?
 validationBlock = { [weak self] (errors: [Error]) -> Void in
     if let error = errors.first {
         print(error)
-        self.activeTextField?.textColor = .red;
+        self?.activeTextField?.textColor = .red;
     } else {
-        self.activeTextField?.textColor = .green
+        self?.activeTextField?.textColor = .green
     }
 }
 ```
