@@ -1,6 +1,7 @@
-before_script: cd Exemple
-language: swift #1
-osx_image: xcode8 #2
-xcode_project: ElValidator.xcodeproj #3
-xcode_scheme: ElValidator-Exemple #4
-xcode_sdk: iphonesimulator10.2 #5
+osx_image: xcode8.2
+language: objective-c
+podfile: Example/Podfile
+before_install:
+    - gem install cocoapods
+    - pod install --project-directory=Example/
+script: xcodebuild -workspace Example/ElValidator.xcworkspace -scheme ElValidator-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
