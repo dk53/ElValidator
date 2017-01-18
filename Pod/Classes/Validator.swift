@@ -20,16 +20,16 @@ public enum ValidatorError: Error {
 public struct ValidatorEvents: OptionSet {
     public let rawValue: Int
 
-    static let None                                 = ValidatorEvents(rawValue: 0)
-    public static let validationPerCharacter        = ValidatorEvents(rawValue: 1 << 0)
-    public static let validationAtEnd               = ValidatorEvents(rawValue: 1 << 1)
-    public static let validationAllowBadCharacters  = ValidatorEvents(rawValue: 1 << 2)
+    static let none                       = ValidatorEvents(rawValue: 0)
+    public static let perCharacter        = ValidatorEvents(rawValue: 1 << 0)
+    public static let atEnd               = ValidatorEvents(rawValue: 1 << 1)
+    public static let allowBadCharacters  = ValidatorEvents(rawValue: 1 << 2)
 
     public init(rawValue:Int) {self.rawValue = rawValue}
 }
 
 open class Validator {
-    open var validationEvent = ValidatorEvents.validationAtEnd
+    open var validationEvent = ValidatorEvents.atEnd
 
     open func validate(value: String) throws {
         print("To override")

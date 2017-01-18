@@ -21,7 +21,7 @@ public enum PatternValidatorRegex : String {
 open class PatternValidator : Validator {
     var internalExpression: NSRegularExpression?
 
-    public init (validationEvent: ValidatorEvents = .validationAtEnd, pattern: PatternValidatorRegex) {
+    public init (validationEvent: ValidatorEvents = .atEnd, pattern: PatternValidatorRegex) {
         do {
             try self.internalExpression = NSRegularExpression(pattern: pattern.rawValue, options: NSRegularExpression.Options.caseInsensitive)
         } catch {
@@ -31,7 +31,7 @@ open class PatternValidator : Validator {
         super.init(validationEvent: validationEvent)
     }
 
-    public init (validationEvent: ValidatorEvents = .validationAtEnd, customPattern: String) {
+    public init (validationEvent: ValidatorEvents = .atEnd, customPattern: String) {
         do {
             self.internalExpression = try NSRegularExpression(pattern: customPattern, options: NSRegularExpression.Options.caseInsensitive)
         } catch {

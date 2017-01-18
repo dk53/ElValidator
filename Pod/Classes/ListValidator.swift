@@ -11,7 +11,7 @@ import Foundation
 open class ListValidator : Validator {
     open var correctValues:[String]
 
-    public init(validationEvent: ValidatorEvents = ValidatorEvents.validationPerCharacter, correctValues:[String]) {
+    public init(validationEvent: ValidatorEvents = ValidatorEvents.perCharacter, correctValues:[String]) {
         self.correctValues = correctValues
         super.init(validationEvent: validationEvent)
     }

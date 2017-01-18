@@ -71,26 +71,26 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textFieldDate.delegate = self
         let df = DateFormatter()
         df.dateStyle = .short
-        textFieldDate.add(validator: DateValidator( validationEvent: .validationPerCharacter, dateFormatter: df))
+        textFieldDate.add(validator: DateValidator( validationEvent: .perCharacter, dateFormatter: df))
         textFieldDate.validationBlock = validationBlock
     }
 
     func configureNumericTextField()
     {
         textFieldNumeric.delegate = self;
-        textFieldNumeric.add(validator: PatternValidator(validationEvent: [.validationPerCharacter, .validationAllowBadCharacters], pattern: .numeric))
+        textFieldNumeric.add(validator: PatternValidator(validationEvent: [.perCharacter, .allowBadCharacters], pattern: .numeric))
         textFieldNumeric.validationBlock = validationBlock
     }
 
     func configureMaxTextField() {
         textFieldMax.delegate = self
-        textFieldMax.add(validator: LenghtValidator(validationEvent: .validationPerCharacter, max: 10))
+        textFieldMax.add(validator: LenghtValidator(validationEvent: .perCharacter, max: 10))
         textFieldMax.validationBlock = validationBlock
     }
 
     func configureListTextField() {
         textFieldList.delegate = self
-        textFieldList.add(validator: ListValidator(validationEvent: .validationPerCharacter, correctValues: ["Swift", "ObjectiveC"]))
+        textFieldList.add(validator: ListValidator(validationEvent: .perCharacter, correctValues: ["Swift", "ObjectiveC"]))
         textFieldList.validationBlock = validationBlock
     }
 

@@ -55,13 +55,13 @@ open class TextFieldValidatorDelegate: NSObject, UITextFieldDelegate {
             var textFieldHasChanged = false
 
             for validator in textField.validators {
-                if (validator.validationEvent.contains(.validationPerCharacter) || validator.validationEvent.contains(.validationAllowBadCharacters)) {
+                if (validator.validationEvent.contains(.perCharacter) || validator.validationEvent.contains(.allowBadCharacters)) {
                     do {
                         textFieldHasChanged = true
                         try validator.validate(value: fullString)
                     } catch {
                         textField.validationBlock?([error])
-                        return !(validator.validationEvent.contains(.validationAllowBadCharacters))
+                        return !(validator.validationEvent.contains(.allowBadCharacters))
                     }
                 }
             }
