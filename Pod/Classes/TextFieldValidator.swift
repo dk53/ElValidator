@@ -15,7 +15,7 @@ open class TextFieldValidator: UITextField {
     var delegateInterceptor :TextFieldValidatorDelegate?
 
     override open var delegate: UITextFieldDelegate? {
-        get { return (self.delegate as? TextFieldValidatorDelegate)?.finalDelegate }
+        get { return delegateInterceptor?.finalDelegate }
         set {
             self.delegateInterceptor = TextFieldValidatorDelegate()
             self.delegateInterceptor?.finalDelegate = newValue
