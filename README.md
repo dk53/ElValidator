@@ -1,6 +1,5 @@
 # ElValidator
 
-[![CI Status](http://img.shields.io/travis/dk53/ElValidator.svg?style=flat)](https://travis-ci.org/dk53/ElValidator)
 [![Version](https://img.shields.io/cocoapods/v/ElValidator.svg?style=flat)](http://cocoapods.org/pods/ElValidator)
 [![License](https://img.shields.io/cocoapods/l/ElValidator.svg?style=flat)](http://cocoapods.org/pods/ElValidator)
 [![Platform](https://img.shields.io/cocoapods/p/ElValidator.svg?style=flat)](http://cocoapods.org/pods/ElValidator)
