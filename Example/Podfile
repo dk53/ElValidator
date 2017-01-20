@@ -1,4 +1,13 @@
-target 'ElValidator_Example' do
-    use_frameworks!
+use_frameworks!
+
+def elValidator_pods
     pod 'ElValidator'
+end
+
+target 'ElValidator_Example' do
+    elValidator_pods
+end
+
+target 'ElValidator_Tests' do
+    elValidator_pods
 end
