@@ -30,9 +30,13 @@ pod "ElValidator"
 
 Victor Carmouze, victor.carmouze@gmail.com
 
-## Exemple
+## Screenshot
 
 ![Exemple](https://raw.githubusercontent.com/dk53/ElValidator/master/Screenshot.png)
+
+## Exemple
+
+![Exemple](https://raw.githubusercontent.com/dk53/ElValidator/master/example.png)
 
 ## Usage
 
