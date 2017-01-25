@@ -15,7 +15,7 @@ Require iOS 8 minimum. Use Swift 3
 
 ## Latest Version
 
-1.1.0
+1.1.1
 
 ## Installation
 
