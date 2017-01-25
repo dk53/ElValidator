@@ -32,11 +32,11 @@ open class TextFieldValidatorDelegate: NSObject, UITextFieldDelegate {
 
             var errors: [Error] = []
             textField.validators.forEach {
-                    do {
-                        try $0.validate(value: textField.text ?? "")
-                    } catch {
-                        errors.append(error)
-                    }
+                do {
+                    try $0.validate(value: textField.text ?? "")
+                } catch {
+                    errors.append(error)
+                }
             }
 
             textField.validationBlock?(errors)
@@ -60,7 +60,9 @@ open class TextFieldValidatorDelegate: NSObject, UITextFieldDelegate {
                         textFieldHasChanged = true
                         try validator.validate(value: fullString)
                     } catch {
-                        textField.validationBlock?([error])
+                        if !validator.validationEvent.contains(.allowBadCharacters) {
+                            textField.validationBlock?([error])
+                        }
                         return !(validator.validationEvent.contains(.allowBadCharacters))
                     }
                 }
@@ -70,7 +72,7 @@ open class TextFieldValidatorDelegate: NSObject, UITextFieldDelegate {
                 textField.validationBlock?([])
             }
         }
-
+        
         return (finalDelegate?.textField?(textField, shouldChangeCharactersIn: range, replacementString: string)) ?? true
     }
 }
