@@ -70,7 +70,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func configureDateTextField() {
         textFieldDate.delegate = self
         let df = DateFormatter()
-        df.dateStyle = .short
+        df.dateFormat = "dd/MM/yyyy"
         textFieldDate.add(validator: DateValidator( validationEvent: .perCharacter, dateFormatter: df))
         textFieldDate.validationBlock = validationBlock
     }
