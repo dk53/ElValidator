@@ -1,7 +1,7 @@
 use_frameworks!
 
 def elValidator_pods
-    pod 'ElValidator'
+    pod 'ElValidator', :git => 'https://github.com/dk53/ElValidator.git'
 end
 
 target 'ElValidator_Example' do
