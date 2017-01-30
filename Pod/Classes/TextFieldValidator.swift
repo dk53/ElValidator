@@ -44,10 +44,10 @@ open class TextFieldValidator: UITextField {
     open func isValid() -> Bool {
         return validators.filter {
             if (try? $0.validate(value: text ?? "")) == nil {
-                return false
+                return true
             }
-            return true
-        }.count > 0
+            return false
+        }.count == 0
     }
 
     open func resetValidators() {
