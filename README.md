@@ -54,7 +54,7 @@ textField.add(validator: LenghtValidator(validationEvent: .validationPerCharacte
 textField.validationBlock = validationBlock
 ```
 
-The you use the validation block to manage feedbacks
+Then you use the validation block to manage feedbacks
 ```swift
 var validationBlock:((_: [Error]) -> Void)?
 
