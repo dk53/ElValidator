@@ -23,20 +23,18 @@ open class DateValidator : Validator {
 
 
     open override func validate(value:String) throws {
-        let date = dateFormatter.date(from: value)
-
-        if date == nil {
+        guard let date = dateFormatter.date(from: value) else {
             throw ValidatorError.dateFormatIsNotCorrect
         }
 
         if let minDate = minDate {
-            if date?.compare(minDate) == ComparisonResult.orderedAscending {
+            if date.compare(minDate) == ComparisonResult.orderedAscending {
                 throw ValidatorError.dateInferiorToMinDate
             }
         }
 
         if let maxDate = maxDate {
-            if date?.compare(maxDate) == ComparisonResult.orderedDescending {
+            if date.compare(maxDate) == ComparisonResult.orderedDescending {
                 throw ValidatorError.dateSuperiorToMaxDate
             }
         }
