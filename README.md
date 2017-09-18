@@ -40,7 +40,7 @@ Victor Carmouze, victor.carmouze@gmail.com
 
 ## Usage
 
-###Basic usage
+### Basic usage
 You must use TextFieldValidator who unherited UITextField to add validators.
 
 ```swift
@@ -68,7 +68,7 @@ validationBlock = { [weak self] (errors: [Error]) -> Void in
 }
 ```
 
-###Validators
+### Validators
 A bunch of validators are included with the framework
 
 - **Date validator**
@@ -76,7 +76,7 @@ A bunch of validators are included with the framework
 - **Regex validator**
 - **List validator**
 
-###Parameters
+### Parameters
 You can use two events to call your validation block
 
 - **validationAtEnd** 
