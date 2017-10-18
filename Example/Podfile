@@ -1,4 +1,5 @@
 use_frameworks!
+platform :ios, '8.0'
 
 def elValidator_pods
     pod 'ElValidator', :git => 'https://github.com/dk53/ElValidator.git'

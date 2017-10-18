@@ -11,13 +11,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-Require iOS 8 minimum.
+Require iOS 8 minimum. Use Swift 3
 
-## Latest Swift 4 Version
+## Latest Version
 
-2.0
-
-## Latest Swift 3 Version
 1.1.2
 
 ## Installation
