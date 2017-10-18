@@ -13,7 +13,7 @@ open class DateValidator : Validator {
     let minDate:Date?
     let maxDate:Date?
 
-    public init(validationEvent: ValidatorEvents = .atEnd, dateFormatter: DateFormatter, minDate:Date = Date(timeIntervalSince1970: -DBL_MAX), maxDate:Date = Date(timeIntervalSinceNow: DBL_MAX)) {
+    public init(validationEvent: ValidatorEvents = .atEnd, dateFormatter: DateFormatter, minDate:Date = Date(timeIntervalSince1970: -.greatestFiniteMagnitude), maxDate:Date = Date(timeIntervalSinceNow: .greatestFiniteMagnitude)) {
 
         self.dateFormatter = dateFormatter
         self.minDate = minDate

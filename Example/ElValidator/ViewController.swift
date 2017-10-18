@@ -94,7 +94,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textFieldList.validationBlock = validationBlock
     }
 
-    func keyboardWillBeShown(sender: NSNotification) {
+    @objc func keyboardWillBeShown(sender: NSNotification) {
         if let info = sender.userInfo,
             let value = info[UIKeyboardFrameEndUserInfoKey] as? NSValue {
             let keyboardSize = value.cgRectValue.size
@@ -104,7 +104,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
 
-    func keyboardWillBeHidden(sender: NSNotification) {
+    @objc func keyboardWillBeHidden(sender: NSNotification) {
         let contentInsets = UIEdgeInsets.zero
         scrollView.contentInset = contentInsets
         scrollView.scrollIndicatorInsets = contentInsets
