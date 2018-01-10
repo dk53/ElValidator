@@ -9,7 +9,7 @@
 import Foundation
 
 open class TextFieldValidatorDelegate: NSObject, UITextFieldDelegate {
-    var finalDelegate: UITextFieldDelegate?
+    weak var finalDelegate: UITextFieldDelegate?
 
     open func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         return finalDelegate?.textFieldShouldBeginEditing?(textField) ?? true
