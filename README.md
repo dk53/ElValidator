@@ -35,11 +35,11 @@ Victor Carmouze, victor.carmouze@gmail.com
 
 ## Screenshot
 
-![Exemple](https://raw.githubusercontent.com/dk53/ElValidator/master/Screenshot.png)
+![Example](https://raw.githubusercontent.com/dk53/ElValidator/master/Screenshot.png)
 
-## Exemple
+## Example
 
-![Exemple](https://raw.githubusercontent.com/dk53/ElValidator/master/example.png)
+![Example](https://raw.githubusercontent.com/dk53/ElValidator/master/example.png)
 
 ## Usage
 
@@ -75,7 +75,7 @@ validationBlock = { [weak self] (errors: [Error]) -> Void in
 A bunch of validators are included with the framework
 
 - **Date validator**
-- **Lenght validator**
+- **Length validator**
 - **Regex validator**
 - **List validator**
 
