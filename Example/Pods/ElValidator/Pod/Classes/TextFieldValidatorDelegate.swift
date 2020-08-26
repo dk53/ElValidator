@@ -48,7 +48,7 @@ open class TextFieldValidatorDelegate: NSObject, UITextFieldDelegate {
     open func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
 
         if let textField = textField as? TextFieldValidator,
-            let textString = textField.text as? NSString {
+            let textString = textField.text as NSString? {
 
             let fullString = textString.replacingCharacters(in: range, with:string)
 
@@ -72,7 +72,7 @@ open class TextFieldValidatorDelegate: NSObject, UITextFieldDelegate {
                 textField.validationBlock?([])
             }
         }
-        
+
         return (finalDelegate?.textField?(textField, shouldChangeCharactersIn: range, replacementString: string)) ?? true
     }
 }

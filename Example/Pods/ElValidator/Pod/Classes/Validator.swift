@@ -20,7 +20,7 @@ public enum ValidatorError: Error {
 public struct ValidatorEvents: OptionSet {
     public let rawValue: Int
 
-    static let none                       = ValidatorEvents(rawValue: 0)
+    static let none                       = ValidatorEvents([])
     public static let perCharacter        = ValidatorEvents(rawValue: 1 << 0)
     public static let atEnd               = ValidatorEvents(rawValue: 1 << 1)
     public static let allowBadCharacters  = ValidatorEvents(rawValue: 1 << 2)

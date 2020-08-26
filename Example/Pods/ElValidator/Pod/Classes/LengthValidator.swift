@@ -13,7 +13,7 @@ open class LenghtValidator : Validator {
     let max:Int
 
     open override func validate(value: String) throws {
-        let chrts = value.characters.count
+        let chrts = value.count
 
         guard chrts <= max && chrts >= min else {
             throw ValidatorError.textTooLong

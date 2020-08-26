@@ -11,10 +11,13 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-Require iOS 8 minimum. Use Swift 3
+Require iOS 8 minimum.
 
-## Latest Version
+## Latest Swift 4 Version
 
+2.0
+
+## Latest Swift 3 Version
 1.1.2
 
 ## Installation
@@ -32,11 +35,11 @@ Victor Carmouze, victor.carmouze@gmail.com
 
 ## Screenshot
 
-![Exemple](https://raw.githubusercontent.com/dk53/ElValidator/master/Screenshot.png)
+![Example](https://raw.githubusercontent.com/dk53/ElValidator/master/Screenshot.png)
 
-## Exemple
+## Example
 
-![Exemple](https://raw.githubusercontent.com/dk53/ElValidator/master/example.png)
+![Example](https://raw.githubusercontent.com/dk53/ElValidator/master/example.png)
 
 ## Usage
 
@@ -72,7 +75,7 @@ validationBlock = { [weak self] (errors: [Error]) -> Void in
 A bunch of validators are included with the framework
 
 - **Date validator**
-- **Lenght validator**
+- **Length validator**
 - **Regex validator**
 - **List validator**
 

@@ -1,5 +1,5 @@
 PODS:
-  - ElValidator (2.0)
+  - ElValidator (3.0)
 
 DEPENDENCIES:
   - ElValidator (from `https://github.com/dk53/ElValidator.git`)
@@ -10,11 +10,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   ElValidator:
-    :commit: ae1effb260d74d33dd0f1cb84fb9a6531984f6f8
+    :commit: 40d8917b41413a624cf13f8e94bca5332a6e0364
     :git: https://github.com/dk53/ElValidator.git
 
 SPEC CHECKSUMS:
-  ElValidator: ad60118b3912deabfec612dc3d61f7f4a980af43
+  ElValidator: 0284b815c70ba4e17a2d57a1b7c506d7de1130bc
 
 PODFILE CHECKSUM: dfb784516a80d8e9687f2278c3c0d3a21aad6d60
 
