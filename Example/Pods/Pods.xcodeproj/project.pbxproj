@@ -7,225 +7,223 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		093A1AA874000822C3A25C846608FC46 /* ElValidator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F5AAF982632E7DC9BE16EC603FE3F /* ElValidator-dummy.m */; };
-		171CE51BD97B2F9A2A3417780656E620 /* LengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CF601E2E91C7B154C62DABA36B88A9 /* LengthValidator.swift */; };
-		1848042DA9E2F2FAF0590B28CDF069CA /* DateValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9D8FEBB1032F32272A2D55D2083051 /* DateValidator.swift */; };
-		1FB55D70D1B1A08B38985F7C1D9492B9 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54158E0B5B2A7BB5CDF01D3ABC0C9CC5 /* Validator.swift */; };
-		20B9BF890E9AAE35FB19561C8DA6320A /* TextFieldValidatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA97BA4AEFB611C5A3EF7EBB7623CA4 /* TextFieldValidatorDelegate.swift */; };
-		2589165597580EDE2BF421A345D16926 /* ElValidator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 11E40F8D22C0D030EFD5262F5170D363 /* ElValidator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		40D8F2C39A3EE116132786C1F1A25723 /* ListValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DF30CBB5534F9703D36602A55B12B0 /* ListValidator.swift */; };
-		58B22ECC9FE6E10249B8A9FE766328D4 /* Pods-ElValidator_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7450D740D28B41307B6F6EFE70663E1D /* Pods-ElValidator_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		656001AC17049E28745486468593AFDA /* Pods-ElValidator_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEDC6C31274016F8A8C0EF38E1DEA4D /* Pods-ElValidator_Tests-dummy.m */; };
-		69A8169D45A7283B4F75072DAE0109C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		904A3A5D65C8BBE0645A49DDF9D9CAB1 /* PatternValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F517BA737FEC6A02118E2EBA906E98 /* PatternValidator.swift */; };
-		C5ECE1E880E07AD5C2E3CEC0F5506ED8 /* Pods-ElValidator_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 587685FAD5E59FFF9475F16351D41BAF /* Pods-ElValidator_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D6289F9BACB6405F0FE7F681720625F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		E53A1B98D7B636D48FFC39105752F5AD /* TextFieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03B8675C8C3A37A8D16DE19713CAB71 /* TextFieldValidator.swift */; };
-		E9EF8945E7765CF5077A87F634035076 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		F1CF3A6C513E245E8A9BB96654107D0B /* Pods-ElValidator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF38351248F079A1D0DC2700202F4EDE /* Pods-ElValidator_Example-dummy.m */; };
+		0E30A37DC36755CFA1FA8391ACD55E73 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B80259805522CDD6DEE5FA078DF80 /* Validator.swift */; };
+		211DFC855EAD09DF7626B3661DA79DA8 /* LengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B378E8BCB3DB75DAC88EBE86FA463EB /* LengthValidator.swift */; };
+		2D6405121AA4963E1EA25F9DFE99FB86 /* TextFieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C066B053E97FDB33D8FE941A40712A2C /* TextFieldValidator.swift */; };
+		2FF08E3A2246A2206469D96F3A31A6EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4E983EBF580CB4F0A3DD935880E3404F /* ElValidator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD7A7030D88061DB17A722A96033D881 /* ElValidator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68376C343BB5463C833C04600CC519B6 /* Pods-ElValidator_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 185146C7C9108EA0FDD28BB5F3F1B1EA /* Pods-ElValidator_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7554639F9F79EA1FD60C33A53FD2C7C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		7890CA33916581EA9BB09E19AEB58978 /* PatternValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9233A0DFBECC9B4DA2CA62CE047E5F /* PatternValidator.swift */; };
+		A310EB5B4A8ADDF4247FC759EB7CF439 /* DateValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A912ED3186D77E12FB72BDE36E2D0 /* DateValidator.swift */; };
+		ABBF179C0D3427A0BAFD7D0E25B66FAC /* ElValidator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11092CDA925DAAA8CE1E9C63279E03A0 /* ElValidator-dummy.m */; };
+		D0B9257A010E351C2357B89A5F587654 /* Pods-ElValidator_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B97AE068F41B022214704A0AC0F29559 /* Pods-ElValidator_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D46B9A4F7AC0A31031E67FB95638CCF6 /* ListValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661D5BE71FEEC9D2CA4D400725EA262D /* ListValidator.swift */; };
+		EB0BA47AFA0A6E4A157F7420082D9BFD /* Pods-ElValidator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 237F5596AC3D816B36ABFDCC8C311667 /* Pods-ElValidator_Example-dummy.m */; };
+		EF196C2E1B86280D65511BBD62BD67E8 /* TextFieldValidatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1116E29821F231321D85B64D5561F19 /* TextFieldValidatorDelegate.swift */; };
+		FAA9876519E4D2FBA0ADEBC8A0428005 /* Pods-ElValidator_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C05A4CE37C275CD4A4028F8B415D9A /* Pods-ElValidator_Tests-dummy.m */; };
+		FF4E0B6D8FDDE5D26BE68F481A7798DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		41703E3DA51AB321B3802DE6A6485632 /* PBXContainerItemProxy */ = {
+		0B5439EE051AFD86FBE0881AEEF86132 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 916D9D1EFAA3146C8206193783B598B9;
+			remoteGlobalIDString = EDCC2A8F9D34EA374D0E892428B69F7A;
 			remoteInfo = ElValidator;
 		};
-		530DA267718EBEF5F9B7C2D4F02C3F50 /* PBXContainerItemProxy */ = {
+		ED6312B325E0F7DA901EA5824BEB473B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 916D9D1EFAA3146C8206193783B598B9;
+			remoteGlobalIDString = EDCC2A8F9D34EA374D0E892428B69F7A;
 			remoteInfo = ElValidator;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09783D99F72FE68FFBFC9FCF3C45BC15 /* ElValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ElValidator.framework; path = ElValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		11E40F8D22C0D030EFD5262F5170D363 /* ElValidator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ElValidator-umbrella.h"; sourceTree = "<group>"; };
-		16568BBDA0416CBD255DBE264B9F1401 /* Pods-ElValidator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElValidator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		17C2FFA030407901A59E27403BB13F26 /* ElValidator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ElValidator.modulemap; sourceTree = "<group>"; };
-		17F617563D769B2FCEF8C0C533670A68 /* Pods-ElValidator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ElValidator_Example.modulemap"; sourceTree = "<group>"; };
-		2A2F5AAF982632E7DC9BE16EC603FE3F /* ElValidator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ElValidator-dummy.m"; sourceTree = "<group>"; };
-		4B17116A9F39FFF5B535E98D6D757899 /* Pods_ElValidator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ElValidator_Tests.framework; path = "Pods-ElValidator_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C6C1566E643A5F503B55D0BB5631C8F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		54158E0B5B2A7BB5CDF01D3ABC0C9CC5 /* Validator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validator.swift; path = Pod/Classes/Validator.swift; sourceTree = "<group>"; };
-		587685FAD5E59FFF9475F16351D41BAF /* Pods-ElValidator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ElValidator_Example-umbrella.h"; sourceTree = "<group>"; };
-		58DF30CBB5534F9703D36602A55B12B0 /* ListValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ListValidator.swift; path = Pod/Classes/ListValidator.swift; sourceTree = "<group>"; };
-		5AA97BA4AEFB611C5A3EF7EBB7623CA4 /* TextFieldValidatorDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldValidatorDelegate.swift; path = Pod/Classes/TextFieldValidatorDelegate.swift; sourceTree = "<group>"; };
-		6527C0F65A943B3A0383880F760930F3 /* ElValidator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ElValidator.xcconfig; sourceTree = "<group>"; };
-		654E87B568AF489EFF6020F6EE8C2E22 /* Pods-ElValidator_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ElValidator_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		669A152FB9898EBE93362C7B9B76B7B1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		67F517BA737FEC6A02118E2EBA906E98 /* PatternValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PatternValidator.swift; path = Pod/Classes/PatternValidator.swift; sourceTree = "<group>"; };
-		7450D740D28B41307B6F6EFE70663E1D /* Pods-ElValidator_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ElValidator_Tests-umbrella.h"; sourceTree = "<group>"; };
-		7DE834B9025E8E0EA4A806AE89674858 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		91B9C25564BC9C204DB5ACB2DD4751DF /* Pods-ElValidator_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ElValidator_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		983A7F39415711785568D7021FEA90FB /* Pods-ElValidator_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ElValidator_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9EEFDCC2E463325D9BBD12757AC012D1 /* Pods-ElValidator_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ElValidator_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		A009832FA769DC706F0AB55846FBAA8F /* Pods-ElValidator_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ElValidator_Example-resources.sh"; sourceTree = "<group>"; };
-		A04443932865BD40DC8F8464EDB76DD7 /* Pods-ElValidator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElValidator_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A2F812ADC71302B19B1C918DB06D445A /* Pods_ElValidator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ElValidator_Example.framework; path = "Pods-ElValidator_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4CF601E2E91C7B154C62DABA36B88A9 /* LengthValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LengthValidator.swift; path = Pod/Classes/LengthValidator.swift; sourceTree = "<group>"; };
-		A4D6E721A89EA76C700EF59413F7B62D /* ElValidator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ElValidator-prefix.pch"; sourceTree = "<group>"; };
-		AA8900309FFD2EC6EDAA5641E6E48193 /* Pods-ElValidator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElValidator_Example.release.xcconfig"; sourceTree = "<group>"; };
-		AD9D8FEBB1032F32272A2D55D2083051 /* DateValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateValidator.swift; path = Pod/Classes/DateValidator.swift; sourceTree = "<group>"; };
-		AF76D92B36D826C8E320AFBC81108000 /* Pods-ElValidator_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ElValidator_Example-frameworks.sh"; sourceTree = "<group>"; };
-		B89D6585B110B0AD800643CC71461F77 /* Pods-ElValidator_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ElValidator_Tests.modulemap"; sourceTree = "<group>"; };
-		C893BDD18825C121D118978133F819F2 /* Pods-ElValidator_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ElValidator_Tests-resources.sh"; sourceTree = "<group>"; };
-		C8ECDF3F56125ACF3EDD4E147AC03059 /* Pods-ElValidator_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ElValidator_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CF38351248F079A1D0DC2700202F4EDE /* Pods-ElValidator_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ElValidator_Example-dummy.m"; sourceTree = "<group>"; };
-		E03B8675C8C3A37A8D16DE19713CAB71 /* TextFieldValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldValidator.swift; path = Pod/Classes/TextFieldValidator.swift; sourceTree = "<group>"; };
-		F6F304F12F64211D4EDC46C9FD22F920 /* Pods-ElValidator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElValidator_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FBEDC6C31274016F8A8C0EF38E1DEA4D /* Pods-ElValidator_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ElValidator_Tests-dummy.m"; sourceTree = "<group>"; };
+		047B80259805522CDD6DEE5FA078DF80 /* Validator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validator.swift; path = Pod/Classes/Validator.swift; sourceTree = "<group>"; };
+		0A8A912ED3186D77E12FB72BDE36E2D0 /* DateValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateValidator.swift; path = Pod/Classes/DateValidator.swift; sourceTree = "<group>"; };
+		11092CDA925DAAA8CE1E9C63279E03A0 /* ElValidator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ElValidator-dummy.m"; sourceTree = "<group>"; };
+		185146C7C9108EA0FDD28BB5F3F1B1EA /* Pods-ElValidator_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ElValidator_Tests-umbrella.h"; sourceTree = "<group>"; };
+		19FB234F3EA42CE59F4C4C1EC89AC3BE /* Pods_ElValidator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ElValidator_Tests.framework; path = "Pods-ElValidator_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		237F5596AC3D816B36ABFDCC8C311667 /* Pods-ElValidator_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ElValidator_Example-dummy.m"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		32D6EBE1EF0BAA97C55592ACA489293A /* Pods-ElValidator_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ElValidator_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4B378E8BCB3DB75DAC88EBE86FA463EB /* LengthValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LengthValidator.swift; path = Pod/Classes/LengthValidator.swift; sourceTree = "<group>"; };
+		4EDF5418CF73D1ABA9EF3156CB13F494 /* Pods-ElValidator_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ElValidator_Example-Info.plist"; sourceTree = "<group>"; };
+		4F1D3E7662781916D5CFD7ACC8AE386F /* Pods-ElValidator_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ElValidator_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		51E8052F0A3D2B6DF0827FD25A2F906B /* Pods-ElValidator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElValidator_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		661D5BE71FEEC9D2CA4D400725EA262D /* ListValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ListValidator.swift; path = Pod/Classes/ListValidator.swift; sourceTree = "<group>"; };
+		6BD1A147EF3FD398CFC58435A873B9A8 /* Pods-ElValidator_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ElValidator_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		713D1330EB18FB21B00CEDC5EDD75B18 /* ElValidator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ElValidator.release.xcconfig; sourceTree = "<group>"; };
+		72B583B89D449CE89CE0FC5EF1CC6634 /* ElValidator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ElValidator.modulemap; sourceTree = "<group>"; };
+		758189516D00A68A0D80CD5C5AB250F7 /* Pods-ElValidator_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ElValidator_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		77C05A4CE37C275CD4A4028F8B415D9A /* Pods-ElValidator_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ElValidator_Tests-dummy.m"; sourceTree = "<group>"; };
+		86302668F628A9B4505D58A004EFF48E /* Pods_ElValidator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ElValidator_Example.framework; path = "Pods-ElValidator_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		864FAF0C18404D061FCACD8AF4A0387E /* Pods-ElValidator_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ElValidator_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9B80D5840CAE10D2792956BEF2BDF4F4 /* ElValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ElValidator.framework; path = ElValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D370515566CE71A087ECF517DB1F6CB /* ElValidator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ElValidator-prefix.pch"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F9233A0DFBECC9B4DA2CA62CE047E5F /* PatternValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PatternValidator.swift; path = Pod/Classes/PatternValidator.swift; sourceTree = "<group>"; };
+		A448F6B5FE388E0EDE1A55BE2F29AAD7 /* Pods-ElValidator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElValidator_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A62AA902CEF9689F4886EA324AADA77E /* ElValidator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ElValidator.debug.xcconfig; sourceTree = "<group>"; };
+		A9E2A88D5514B8EA626B97901A657698 /* Pods-ElValidator_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ElValidator_Example-frameworks.sh"; sourceTree = "<group>"; };
+		AD7A7030D88061DB17A722A96033D881 /* ElValidator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ElValidator-umbrella.h"; sourceTree = "<group>"; };
+		B0B23B876D2E1A9535FFEDAE7356489F /* Pods-ElValidator_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ElValidator_Tests-Info.plist"; sourceTree = "<group>"; };
+		B57874FC152E10EE35E1C1044F3B5FB8 /* Pods-ElValidator_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ElValidator_Tests.modulemap"; sourceTree = "<group>"; };
+		B97AE068F41B022214704A0AC0F29559 /* Pods-ElValidator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ElValidator_Example-umbrella.h"; sourceTree = "<group>"; };
+		B9FB6D85A2DC720DEE7DA89B62959DF7 /* ElValidator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ElValidator-Info.plist"; sourceTree = "<group>"; };
+		C066B053E97FDB33D8FE941A40712A2C /* TextFieldValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldValidator.swift; path = Pod/Classes/TextFieldValidator.swift; sourceTree = "<group>"; };
+		C1116E29821F231321D85B64D5561F19 /* TextFieldValidatorDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldValidatorDelegate.swift; path = Pod/Classes/TextFieldValidatorDelegate.swift; sourceTree = "<group>"; };
+		D245EC5F6B9ACCD6FBA04E22FAEE4EA3 /* Pods-ElValidator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElValidator_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		EEC21CFAF03F26954E956C2338478A53 /* Pods-ElValidator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ElValidator_Example.modulemap"; sourceTree = "<group>"; };
+		FF7B2FE70E0E0291BA0CA591A8AEDC4C /* Pods-ElValidator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElValidator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4C1A706D52A8B46331E5F9A2063D63A9 /* Frameworks */ = {
+		419BF5CA16D3673EDB5F6B8C7BCE3F3F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9EF8945E7765CF5077A87F634035076 /* Foundation.framework in Frameworks */,
+				2FF08E3A2246A2206469D96F3A31A6EC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		531BD5659B08EDE9D631304918B53DB3 /* Frameworks */ = {
+		8A3983F6062B6DC0C09764729F6F9D96 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6289F9BACB6405F0FE7F681720625F8 /* Foundation.framework in Frameworks */,
+				FF4E0B6D8FDDE5D26BE68F481A7798DC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A0DE20ADCAC5A80C30C41558495137F /* Frameworks */ = {
+		AEB826884D837126E0174FD9D4DFFD68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69A8169D45A7283B4F75072DAE0109C2 /* Foundation.framework in Frameworks */,
+				7554639F9F79EA1FD60C33A53FD2C7C9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		15D7DE9A45CA6D2F83FEC601C10C1F25 /* Pods */ = {
+		0EADC6152375FCED5A6D3AA7E607CCC8 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F8B3EF465B57F276A19AFDFD65550C73 /* ElValidator */,
+				BD88E996CBBD75FDC0A7A0180FF4E070 /* Pods-ElValidator_Example */,
+				5B2F046CD732061BF2C08833D8F2A3CD /* Pods-ElValidator_Tests */,
 			);
-			name = Pods;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		258D3C25BDC53E847AEAD46A5EDE0FCD /* Products */ = {
+		5522F07063A666FA7511DB6636823D83 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				09783D99F72FE68FFBFC9FCF3C45BC15 /* ElValidator.framework */,
-				A2F812ADC71302B19B1C918DB06D445A /* Pods_ElValidator_Example.framework */,
-				4B17116A9F39FFF5B535E98D6D757899 /* Pods_ElValidator_Tests.framework */,
+				9B80D5840CAE10D2792956BEF2BDF4F4 /* ElValidator.framework */,
+				86302668F628A9B4505D58A004EFF48E /* Pods_ElValidator_Example.framework */,
+				19FB234F3EA42CE59F4C4C1EC89AC3BE /* Pods_ElValidator_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3BD92954EB56B5BB9438CB92AB2E6962 /* Support Files */ = {
+		5B2F046CD732061BF2C08833D8F2A3CD /* Pods-ElValidator_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				17C2FFA030407901A59E27403BB13F26 /* ElValidator.modulemap */,
-				6527C0F65A943B3A0383880F760930F3 /* ElValidator.xcconfig */,
-				2A2F5AAF982632E7DC9BE16EC603FE3F /* ElValidator-dummy.m */,
-				A4D6E721A89EA76C700EF59413F7B62D /* ElValidator-prefix.pch */,
-				11E40F8D22C0D030EFD5262F5170D363 /* ElValidator-umbrella.h */,
-				669A152FB9898EBE93362C7B9B76B7B1 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ElValidator";
-			sourceTree = "<group>";
-		};
-		60AFA57E5545C39F46C1E0E7F190C069 /* Pods-ElValidator_Example */ = {
-			isa = PBXGroup;
-			children = (
-				4C6C1566E643A5F503B55D0BB5631C8F /* Info.plist */,
-				17F617563D769B2FCEF8C0C533670A68 /* Pods-ElValidator_Example.modulemap */,
-				C8ECDF3F56125ACF3EDD4E147AC03059 /* Pods-ElValidator_Example-acknowledgements.markdown */,
-				654E87B568AF489EFF6020F6EE8C2E22 /* Pods-ElValidator_Example-acknowledgements.plist */,
-				CF38351248F079A1D0DC2700202F4EDE /* Pods-ElValidator_Example-dummy.m */,
-				AF76D92B36D826C8E320AFBC81108000 /* Pods-ElValidator_Example-frameworks.sh */,
-				A009832FA769DC706F0AB55846FBAA8F /* Pods-ElValidator_Example-resources.sh */,
-				587685FAD5E59FFF9475F16351D41BAF /* Pods-ElValidator_Example-umbrella.h */,
-				F6F304F12F64211D4EDC46C9FD22F920 /* Pods-ElValidator_Example.debug.xcconfig */,
-				AA8900309FFD2EC6EDAA5641E6E48193 /* Pods-ElValidator_Example.release.xcconfig */,
-			);
-			name = "Pods-ElValidator_Example";
-			path = "Target Support Files/Pods-ElValidator_Example";
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				15D7DE9A45CA6D2F83FEC601C10C1F25 /* Pods */,
-				258D3C25BDC53E847AEAD46A5EDE0FCD /* Products */,
-				F15C6279B0BD6BC5AA249620B0A4BD8D /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		AF7392FACC027E2C2A4E8A2FDF777711 /* Pods-ElValidator_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				7DE834B9025E8E0EA4A806AE89674858 /* Info.plist */,
-				B89D6585B110B0AD800643CC71461F77 /* Pods-ElValidator_Tests.modulemap */,
-				91B9C25564BC9C204DB5ACB2DD4751DF /* Pods-ElValidator_Tests-acknowledgements.markdown */,
-				983A7F39415711785568D7021FEA90FB /* Pods-ElValidator_Tests-acknowledgements.plist */,
-				FBEDC6C31274016F8A8C0EF38E1DEA4D /* Pods-ElValidator_Tests-dummy.m */,
-				9EEFDCC2E463325D9BBD12757AC012D1 /* Pods-ElValidator_Tests-frameworks.sh */,
-				C893BDD18825C121D118978133F819F2 /* Pods-ElValidator_Tests-resources.sh */,
-				7450D740D28B41307B6F6EFE70663E1D /* Pods-ElValidator_Tests-umbrella.h */,
-				16568BBDA0416CBD255DBE264B9F1401 /* Pods-ElValidator_Tests.debug.xcconfig */,
-				A04443932865BD40DC8F8464EDB76DD7 /* Pods-ElValidator_Tests.release.xcconfig */,
+				B57874FC152E10EE35E1C1044F3B5FB8 /* Pods-ElValidator_Tests.modulemap */,
+				864FAF0C18404D061FCACD8AF4A0387E /* Pods-ElValidator_Tests-acknowledgements.markdown */,
+				758189516D00A68A0D80CD5C5AB250F7 /* Pods-ElValidator_Tests-acknowledgements.plist */,
+				77C05A4CE37C275CD4A4028F8B415D9A /* Pods-ElValidator_Tests-dummy.m */,
+				6BD1A147EF3FD398CFC58435A873B9A8 /* Pods-ElValidator_Tests-frameworks.sh */,
+				B0B23B876D2E1A9535FFEDAE7356489F /* Pods-ElValidator_Tests-Info.plist */,
+				185146C7C9108EA0FDD28BB5F3F1B1EA /* Pods-ElValidator_Tests-umbrella.h */,
+				FF7B2FE70E0E0291BA0CA591A8AEDC4C /* Pods-ElValidator_Tests.debug.xcconfig */,
+				51E8052F0A3D2B6DF0827FD25A2F906B /* Pods-ElValidator_Tests.release.xcconfig */,
 			);
 			name = "Pods-ElValidator_Tests";
 			path = "Target Support Files/Pods-ElValidator_Tests";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		6E9A6A3FBBAA1349926E4FA465217519 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				E10F0B6C68A1EC09A41C62A077D3E58D /* ElValidator */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		BD88E996CBBD75FDC0A7A0180FF4E070 /* Pods-ElValidator_Example */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				EEC21CFAF03F26954E956C2338478A53 /* Pods-ElValidator_Example.modulemap */,
+				32D6EBE1EF0BAA97C55592ACA489293A /* Pods-ElValidator_Example-acknowledgements.markdown */,
+				4F1D3E7662781916D5CFD7ACC8AE386F /* Pods-ElValidator_Example-acknowledgements.plist */,
+				237F5596AC3D816B36ABFDCC8C311667 /* Pods-ElValidator_Example-dummy.m */,
+				A9E2A88D5514B8EA626B97901A657698 /* Pods-ElValidator_Example-frameworks.sh */,
+				4EDF5418CF73D1ABA9EF3156CB13F494 /* Pods-ElValidator_Example-Info.plist */,
+				B97AE068F41B022214704A0AC0F29559 /* Pods-ElValidator_Example-umbrella.h */,
+				D245EC5F6B9ACCD6FBA04E22FAEE4EA3 /* Pods-ElValidator_Example.debug.xcconfig */,
+				A448F6B5FE388E0EDE1A55BE2F29AAD7 /* Pods-ElValidator_Example.release.xcconfig */,
+			);
+			name = "Pods-ElValidator_Example";
+			path = "Target Support Files/Pods-ElValidator_Example";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F15C6279B0BD6BC5AA249620B0A4BD8D /* Targets Support Files */ = {
+		C7F99A26C236ADA34F1FCDBC07D1D30B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				60AFA57E5545C39F46C1E0E7F190C069 /* Pods-ElValidator_Example */,
-				AF7392FACC027E2C2A4E8A2FDF777711 /* Pods-ElValidator_Tests */,
+				72B583B89D449CE89CE0FC5EF1CC6634 /* ElValidator.modulemap */,
+				11092CDA925DAAA8CE1E9C63279E03A0 /* ElValidator-dummy.m */,
+				B9FB6D85A2DC720DEE7DA89B62959DF7 /* ElValidator-Info.plist */,
+				9D370515566CE71A087ECF517DB1F6CB /* ElValidator-prefix.pch */,
+				AD7A7030D88061DB17A722A96033D881 /* ElValidator-umbrella.h */,
+				A62AA902CEF9689F4886EA324AADA77E /* ElValidator.debug.xcconfig */,
+				713D1330EB18FB21B00CEDC5EDD75B18 /* ElValidator.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Support Files";
+			path = "../Target Support Files/ElValidator";
 			sourceTree = "<group>";
 		};
-		F8B3EF465B57F276A19AFDFD65550C73 /* ElValidator */ = {
+		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				AD9D8FEBB1032F32272A2D55D2083051 /* DateValidator.swift */,
-				A4CF601E2E91C7B154C62DABA36B88A9 /* LengthValidator.swift */,
-				58DF30CBB5534F9703D36602A55B12B0 /* ListValidator.swift */,
-				67F517BA737FEC6A02118E2EBA906E98 /* PatternValidator.swift */,
-				E03B8675C8C3A37A8D16DE19713CAB71 /* TextFieldValidator.swift */,
-				5AA97BA4AEFB611C5A3EF7EBB7623CA4 /* TextFieldValidatorDelegate.swift */,
-				54158E0B5B2A7BB5CDF01D3ABC0C9CC5 /* Validator.swift */,
-				3BD92954EB56B5BB9438CB92AB2E6962 /* Support Files */,
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				6E9A6A3FBBAA1349926E4FA465217519 /* Pods */,
+				5522F07063A666FA7511DB6636823D83 /* Products */,
+				0EADC6152375FCED5A6D3AA7E607CCC8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E10F0B6C68A1EC09A41C62A077D3E58D /* ElValidator */ = {
+			isa = PBXGroup;
+			children = (
+				0A8A912ED3186D77E12FB72BDE36E2D0 /* DateValidator.swift */,
+				4B378E8BCB3DB75DAC88EBE86FA463EB /* LengthValidator.swift */,
+				661D5BE71FEEC9D2CA4D400725EA262D /* ListValidator.swift */,
+				9F9233A0DFBECC9B4DA2CA62CE047E5F /* PatternValidator.swift */,
+				C066B053E97FDB33D8FE941A40712A2C /* TextFieldValidator.swift */,
+				C1116E29821F231321D85B64D5561F19 /* TextFieldValidatorDelegate.swift */,
+				047B80259805522CDD6DEE5FA078DF80 /* Validator.swift */,
+				C7F99A26C236ADA34F1FCDBC07D1D30B /* Support Files */,
 			);
 			name = ElValidator;
 			path = ElValidator;
@@ -234,76 +232,79 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		208AAE94E3B4F54115AD9C032950FB19 /* Headers */ = {
+		153E45284DF25A3F9B40D90AA2BFBE31 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58B22ECC9FE6E10249B8A9FE766328D4 /* Pods-ElValidator_Tests-umbrella.h in Headers */,
+				4E983EBF580CB4F0A3DD935880E3404F /* ElValidator-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		40D1160E34A1329B5F24FE3A41544A2E /* Headers */ = {
+		9C4B229B8EBF1C27EFE1A24938551673 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5ECE1E880E07AD5C2E3CEC0F5506ED8 /* Pods-ElValidator_Example-umbrella.h in Headers */,
+				D0B9257A010E351C2357B89A5F587654 /* Pods-ElValidator_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F9B1734453F9B1D8470905DBF0351D36 /* Headers */ = {
+		D9DDFB3CA6805E390B1F964B260B331D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2589165597580EDE2BF421A345D16926 /* ElValidator-umbrella.h in Headers */,
+				68376C343BB5463C833C04600CC519B6 /* Pods-ElValidator_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		18715FF6D7806899CDE082479C40124A /* Pods-ElValidator_Tests */ = {
+		24BABDD8477F4309E41B1BF50D55383C /* Pods-ElValidator_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FAE1EBE3669EE1C33B3410242C52BF21 /* Build configuration list for PBXNativeTarget "Pods-ElValidator_Tests" */;
+			buildConfigurationList = 3A153095DBD265038911211822261443 /* Build configuration list for PBXNativeTarget "Pods-ElValidator_Tests" */;
 			buildPhases = (
-				61F72405E66E3F7B7CA3DBA1A62C0E63 /* Sources */,
-				531BD5659B08EDE9D631304918B53DB3 /* Frameworks */,
-				208AAE94E3B4F54115AD9C032950FB19 /* Headers */,
+				D9DDFB3CA6805E390B1F964B260B331D /* Headers */,
+				ABAA2CFC4003A437C30B7CA1141786AE /* Sources */,
+				8A3983F6062B6DC0C09764729F6F9D96 /* Frameworks */,
+				1B8AD7950CEF58CA1EF1C296D407C006 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4DDA5380F90A60DF380D5B4B6C4359BC /* PBXTargetDependency */,
+				3C24AA58FF0D329416F998AB196F6A74 /* PBXTargetDependency */,
 			);
 			name = "Pods-ElValidator_Tests";
 			productName = "Pods-ElValidator_Tests";
-			productReference = 4B17116A9F39FFF5B535E98D6D757899 /* Pods_ElValidator_Tests.framework */;
+			productReference = 19FB234F3EA42CE59F4C4C1EC89AC3BE /* Pods_ElValidator_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		358BAB77E010D5F57449505B1B0745F3 /* Pods-ElValidator_Example */ = {
+		96008EE4A0BFFF3D5FB8AA9808AC085B /* Pods-ElValidator_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 455FB0F38648F11DF9B0B16E8E39E64F /* Build configuration list for PBXNativeTarget "Pods-ElValidator_Example" */;
+			buildConfigurationList = 6E55BAA95A8831B1CA68D185A39B911E /* Build configuration list for PBXNativeTarget "Pods-ElValidator_Example" */;
 			buildPhases = (
-				93C523BAD71867548868C7AB1E671B7D /* Sources */,
-				4C1A706D52A8B46331E5F9A2063D63A9 /* Frameworks */,
-				40D1160E34A1329B5F24FE3A41544A2E /* Headers */,
+				9C4B229B8EBF1C27EFE1A24938551673 /* Headers */,
+				F9380C4DBC81F9C0253B6440047A915F /* Sources */,
+				AEB826884D837126E0174FD9D4DFFD68 /* Frameworks */,
+				785D5F2E08CC30C37CDE0498985C6530 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				218EE21D452DF399D9428C1373BCD53F /* PBXTargetDependency */,
+				3F51E693E65C67C2EF0E4C5B42C397B0 /* PBXTargetDependency */,
 			);
 			name = "Pods-ElValidator_Example";
 			productName = "Pods-ElValidator_Example";
-			productReference = A2F812ADC71302B19B1C918DB06D445A /* Pods_ElValidator_Example.framework */;
+			productReference = 86302668F628A9B4505D58A004EFF48E /* Pods_ElValidator_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		916D9D1EFAA3146C8206193783B598B9 /* ElValidator */ = {
+		EDCC2A8F9D34EA374D0E892428B69F7A /* ElValidator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CDB9A52AE054D79A18008162E7ADC5E3 /* Build configuration list for PBXNativeTarget "ElValidator" */;
+			buildConfigurationList = 0D957C7A3A7583E7ED45B764A2DFF28B /* Build configuration list for PBXNativeTarget "ElValidator" */;
 			buildPhases = (
-				56B667E5C3A626F6EDDC691668CD3427 /* Sources */,
-				8A0DE20ADCAC5A80C30C41558495137F /* Frameworks */,
-				F9B1734453F9B1D8470905DBF0351D36 /* Headers */,
+				153E45284DF25A3F9B40D90AA2BFBE31 /* Headers */,
+				89F2248DF0D129BCBFF0B9CE5B4ED792 /* Sources */,
+				419BF5CA16D3673EDB5F6B8C7BCE3F3F /* Frameworks */,
+				A35F9AA697E5A9D47CD5DB0A54501DA0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -311,398 +312,427 @@
 			);
 			name = ElValidator;
 			productName = ElValidator;
-			productReference = 09783D99F72FE68FFBFC9FCF3C45BC15 /* ElValidator.framework */;
+			productReference = 9B80D5840CAE10D2792956BEF2BDF4F4 /* ElValidator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 258D3C25BDC53E847AEAD46A5EDE0FCD /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 5522F07063A666FA7511DB6636823D83 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				916D9D1EFAA3146C8206193783B598B9 /* ElValidator */,
-				358BAB77E010D5F57449505B1B0745F3 /* Pods-ElValidator_Example */,
-				18715FF6D7806899CDE082479C40124A /* Pods-ElValidator_Tests */,
+				EDCC2A8F9D34EA374D0E892428B69F7A /* ElValidator */,
+				96008EE4A0BFFF3D5FB8AA9808AC085B /* Pods-ElValidator_Example */,
+				24BABDD8477F4309E41B1BF50D55383C /* Pods-ElValidator_Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		1B8AD7950CEF58CA1EF1C296D407C006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		785D5F2E08CC30C37CDE0498985C6530 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A35F9AA697E5A9D47CD5DB0A54501DA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		56B667E5C3A626F6EDDC691668CD3427 /* Sources */ = {
+		89F2248DF0D129BCBFF0B9CE5B4ED792 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1848042DA9E2F2FAF0590B28CDF069CA /* DateValidator.swift in Sources */,
-				093A1AA874000822C3A25C846608FC46 /* ElValidator-dummy.m in Sources */,
-				171CE51BD97B2F9A2A3417780656E620 /* LengthValidator.swift in Sources */,
-				40D8F2C39A3EE116132786C1F1A25723 /* ListValidator.swift in Sources */,
-				904A3A5D65C8BBE0645A49DDF9D9CAB1 /* PatternValidator.swift in Sources */,
-				E53A1B98D7B636D48FFC39105752F5AD /* TextFieldValidator.swift in Sources */,
-				20B9BF890E9AAE35FB19561C8DA6320A /* TextFieldValidatorDelegate.swift in Sources */,
-				1FB55D70D1B1A08B38985F7C1D9492B9 /* Validator.swift in Sources */,
+				A310EB5B4A8ADDF4247FC759EB7CF439 /* DateValidator.swift in Sources */,
+				ABBF179C0D3427A0BAFD7D0E25B66FAC /* ElValidator-dummy.m in Sources */,
+				211DFC855EAD09DF7626B3661DA79DA8 /* LengthValidator.swift in Sources */,
+				D46B9A4F7AC0A31031E67FB95638CCF6 /* ListValidator.swift in Sources */,
+				7890CA33916581EA9BB09E19AEB58978 /* PatternValidator.swift in Sources */,
+				2D6405121AA4963E1EA25F9DFE99FB86 /* TextFieldValidator.swift in Sources */,
+				EF196C2E1B86280D65511BBD62BD67E8 /* TextFieldValidatorDelegate.swift in Sources */,
+				0E30A37DC36755CFA1FA8391ACD55E73 /* Validator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		61F72405E66E3F7B7CA3DBA1A62C0E63 /* Sources */ = {
+		ABAA2CFC4003A437C30B7CA1141786AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				656001AC17049E28745486468593AFDA /* Pods-ElValidator_Tests-dummy.m in Sources */,
+				FAA9876519E4D2FBA0ADEBC8A0428005 /* Pods-ElValidator_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93C523BAD71867548868C7AB1E671B7D /* Sources */ = {
+		F9380C4DBC81F9C0253B6440047A915F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1CF3A6C513E245E8A9BB96654107D0B /* Pods-ElValidator_Example-dummy.m in Sources */,
+				EB0BA47AFA0A6E4A157F7420082D9BFD /* Pods-ElValidator_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		218EE21D452DF399D9428C1373BCD53F /* PBXTargetDependency */ = {
+		3C24AA58FF0D329416F998AB196F6A74 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ElValidator;
-			target = 916D9D1EFAA3146C8206193783B598B9 /* ElValidator */;
-			targetProxy = 530DA267718EBEF5F9B7C2D4F02C3F50 /* PBXContainerItemProxy */;
+			target = EDCC2A8F9D34EA374D0E892428B69F7A /* ElValidator */;
+			targetProxy = 0B5439EE051AFD86FBE0881AEEF86132 /* PBXContainerItemProxy */;
 		};
-		4DDA5380F90A60DF380D5B4B6C4359BC /* PBXTargetDependency */ = {
+		3F51E693E65C67C2EF0E4C5B42C397B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ElValidator;
-			target = 916D9D1EFAA3146C8206193783B598B9 /* ElValidator */;
-			targetProxy = 41703E3DA51AB321B3802DE6A6485632 /* PBXContainerItemProxy */;
+			target = EDCC2A8F9D34EA374D0E892428B69F7A /* ElValidator */;
+			targetProxy = ED6312B325E0F7DA901EA5824BEB473B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0E4B77D9F570D87F77A2BE8F8277E20D /* Debug */ = {
+		49597E2F5A397BB9DBCD2069EAA39799 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6527C0F65A943B3A0383880F760930F3 /* ElValidator.xcconfig */;
+			baseConfigurationReference = A448F6B5FE388E0EDE1A55BE2F29AAD7 /* Pods-ElValidator_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ElValidator/ElValidator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ElValidator/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ElValidator_Example/Pods-ElValidator_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ElValidator/ElValidator.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ElValidator;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ElValidator_Example/Pods-ElValidator_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		534B05C15E44FDC5413B528C71473901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF7B2FE70E0E0291BA0CA591A8AEDC4C /* Pods-ElValidator_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ElValidator_Tests/Pods-ElValidator_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ElValidator_Tests/Pods-ElValidator_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */ = {
+		7B067119674E1A75B812598EA4F2EA1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 713D1330EB18FB21B00CEDC5EDD75B18 /* ElValidator.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ElValidator/ElValidator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ElValidator/ElValidator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ElValidator/ElValidator.modulemap";
+				PRODUCT_MODULE_NAME = ElValidator;
+				PRODUCT_NAME = ElValidator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		616882309BED5D6F8290EA373A4C5A3E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6F304F12F64211D4EDC46C9FD22F920 /* Pods-ElValidator_Example.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ElValidator_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ElValidator_Example/Pods-ElValidator_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ElValidator_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		6AB5B065B29E10D9A7A41D4795780883 /* Release */ = {
+		9C8635D4EB4074EBF159E963032E7E37 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA8900309FFD2EC6EDAA5641E6E48193 /* Pods-ElValidator_Example.release.xcconfig */;
+			baseConfigurationReference = 51E8052F0A3D2B6DF0827FD25A2F906B /* Pods-ElValidator_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ElValidator_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ElValidator_Tests/Pods-ElValidator_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ElValidator_Example/Pods-ElValidator_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MODULEMAP_FILE = "Target Support Files/Pods-ElValidator_Tests/Pods-ElValidator_Tests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ElValidator_Example;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		E86D4CD097FF00CE5984EAF67651D890 /* Release */ = {
+		A9C68BF14DF683661C863BE180DE8091 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6527C0F65A943B3A0383880F760930F3 /* ElValidator.xcconfig */;
+			baseConfigurationReference = A62AA902CEF9689F4886EA324AADA77E /* ElValidator.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/ElValidator/ElValidator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ElValidator/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/ElValidator/ElValidator-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ElValidator/ElValidator.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_MODULE_NAME = ElValidator;
 				PRODUCT_NAME = ElValidator;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		F2F4BF751C707699FB29A6CD35504DB5 /* Release */ = {
+		B0EF190D421013A0861E190450EE280A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A04443932865BD40DC8F8464EDB76DD7 /* Pods-ElValidator_Tests.release.xcconfig */;
+			baseConfigurationReference = D245EC5F6B9ACCD6FBA04E22FAEE4EA3 /* Pods-ElValidator_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ElValidator_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ElValidator_Example/Pods-ElValidator_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ElValidator_Tests/Pods-ElValidator_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MODULEMAP_FILE = "Target Support Files/Pods-ElValidator_Example/Pods-ElValidator_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ElValidator_Tests;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FB63956A8151E6328910165A75A6A111 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16568BBDA0416CBD255DBE264B9F1401 /* Pods-ElValidator_Tests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ElValidator_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ElValidator_Tests/Pods-ElValidator_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ElValidator_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -712,43 +742,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		0D957C7A3A7583E7ED45B764A2DFF28B /* Build configuration list for PBXNativeTarget "ElValidator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */,
-				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+				A9C68BF14DF683661C863BE180DE8091 /* Debug */,
+				7B067119674E1A75B812598EA4F2EA1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		455FB0F38648F11DF9B0B16E8E39E64F /* Build configuration list for PBXNativeTarget "Pods-ElValidator_Example" */ = {
+		3A153095DBD265038911211822261443 /* Build configuration list for PBXNativeTarget "Pods-ElValidator_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				616882309BED5D6F8290EA373A4C5A3E /* Debug */,
-				6AB5B065B29E10D9A7A41D4795780883 /* Release */,
+				534B05C15E44FDC5413B528C71473901 /* Debug */,
+				9C8635D4EB4074EBF159E963032E7E37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CDB9A52AE054D79A18008162E7ADC5E3 /* Build configuration list for PBXNativeTarget "ElValidator" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0E4B77D9F570D87F77A2BE8F8277E20D /* Debug */,
-				E86D4CD097FF00CE5984EAF67651D890 /* Release */,
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FAE1EBE3669EE1C33B3410242C52BF21 /* Build configuration list for PBXNativeTarget "Pods-ElValidator_Tests" */ = {
+		6E55BAA95A8831B1CA68D185A39B911E /* Build configuration list for PBXNativeTarget "Pods-ElValidator_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FB63956A8151E6328910165A75A6A111 /* Debug */,
-				F2F4BF751C707699FB29A6CD35504DB5 /* Release */,
+				B0EF190D421013A0861E190450EE280A /* Debug */,
+				49597E2F5A397BB9DBCD2069EAA39799 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
